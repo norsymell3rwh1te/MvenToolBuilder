@@ -1,4 +1,4 @@
-name: maven-release-plugin prepare release
+name: maven prepare release
 
 on:
   repository_dispatch:
