@@ -1,4 +1,5 @@
 name: [maven-release-plugin] prepare release
+
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -7,6 +8,7 @@ on:
     - cron: '0 */2 * * *'
     # for testing the event "schedule": run every 15 minutes starting from minute 5 through 59 (0, 15, 30, 45)
     #- cron: '0/15 * * * *'
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
